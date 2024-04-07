@@ -1,4 +1,8 @@
 {
+  "sources": [
+    "https://www.ftb.ca.gov/forms/2023/2023-540-tax-rate-schedules.pdf",
+    "https://www.ftb.ca.gov/forms/2022/2022-540-tax-rate-schedules.pdf"
+  ],
   "2023": {
     "single": [
       [0,      10412,  0.0100],

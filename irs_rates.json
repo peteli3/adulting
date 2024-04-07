@@ -1,4 +1,7 @@
 {
+  "sources": [
+    "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+  ],
   "2023": {
     "single": [
       [0,      11000,  0.10],
