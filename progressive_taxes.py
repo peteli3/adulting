@@ -49,13 +49,14 @@ class TaxTable:
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument('overlord')
     parser.add_argument('year')
     parser.add_argument('filing_status')
     parser.add_argument('taxable_income', type=int, help='form 1040 line 15')
     parser.add_argument('--breakdown', action='store_true')
     args = parser.parse_args()
 
-    with open('irs_rates.json', 'r') as f:
+    with open(f'{args.overlord}_rates.json', 'r') as f:
         config = json.load(f)
     rows = config[args.year][args.filing_status]
     table = TaxTable([ Bracket.from_row(r) for r in rows ])
