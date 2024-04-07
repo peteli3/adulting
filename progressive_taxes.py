@@ -52,7 +52,7 @@ def main():
     parser.add_argument('overlord')
     parser.add_argument('year')
     parser.add_argument('filing_status')
-    parser.add_argument('taxable_income', type=int, help='form 1040 line 15')
+    parser.add_argument('taxable_income', type=int, help='ex: form 1040 line 15 for irs')
     parser.add_argument('--breakdown', action='store_true')
     args = parser.parse_args()
 
