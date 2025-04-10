@@ -1,2 +1,2 @@
 # adulting
-Scripts for double checking 1040s and stuff like that...
+Calculator to check taxes against
